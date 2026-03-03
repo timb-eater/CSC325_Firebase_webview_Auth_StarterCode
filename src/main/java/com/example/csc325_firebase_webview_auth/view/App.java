@@ -6,16 +6,23 @@ import com.google.cloud.firestore.Firestore;
 import com.google.firebase.auth.FirebaseAuth;
 import java.io.IOException;
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * JavaFX App
  */
 public class App extends Application {
 
+    private static final Logger log = LoggerFactory.getLogger(App.class);
     public static Firestore fstore;
     public static FirebaseAuth fauth;
     public static Scene scene;
@@ -31,7 +38,7 @@ public class App extends Application {
     public void start(Stage primaryStage) throws Exception {
         fstore = contxtFirebase.firebase();
         fauth = FirebaseAuth.getInstance();
-        scene = new Scene(loadFXML("/files/AccessFBView.fxml"));
+        scene = new Scene(loadFXML("/files/LoginPrompt.fxml"));
         primaryStage.setScene(scene);
         primaryStage.setTitle("Application");
         primaryStage.show();

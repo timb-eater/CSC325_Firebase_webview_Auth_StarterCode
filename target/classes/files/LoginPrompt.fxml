@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.view.LoginController">
+   <children>
+      <Label fx:id="incorrectLabel" layoutX="88.0" layoutY="42.0" prefHeight="25.0" prefWidth="108.0" text="Incorrect Password!" visible="false" />
+      <TextField fx:id="usernameField" layoutX="76.0" layoutY="75.0" promptText="Username" />
+      <PasswordField fx:id="passwordField" layoutX="76.0" layoutY="111.0" promptText="Password" />
+      <Button fx:id="loginButton" layoutX="124.0" layoutY="149.0" mnemonicParsing="false" onAction="#handleLogin" text="Login" />
+   </children>
+</AnchorPane>
