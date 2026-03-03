@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4ae5f67-a013-4cbc-a589-49fa29fa9b6b" name="Changes" comment="initial">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/csc325_firebase_webview_auth/Main.java" afterDir="false" />
+    <list default="true" id="e4ae5f67-a013-4cbc-a589-49fa29fa9b6b" name="Changes" comment="added primaryStage">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +160,7 @@
       <workItem from="1710690942533" duration="7228000" />
       <workItem from="1710732741753" duration="608000" />
       <workItem from="1710733353801" duration="5503000" />
-      <workItem from="1772490596040" duration="4160000" />
+      <workItem from="1772490596040" duration="4715000" />
     </task>
     <task id="LOCAL-00001" summary="reduce Java version to 17">
       <option name="closed" value="true" />
@@ -194,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772495111562</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added primaryStage">
+      <option name="closed" value="true" />
+      <created>1772497341677</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1772497341677</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +216,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="GUI update" />
     <MESSAGE value="initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+    <MESSAGE value="added primaryStage" />
+    <option name="LAST_COMMIT_MESSAGE" value="added primaryStage" />
   </component>
 </project>
