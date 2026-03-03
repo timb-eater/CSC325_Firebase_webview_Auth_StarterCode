@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4ae5f67-a013-4cbc-a589-49fa29fa9b6b" name="Changes" comment="GUI update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/AccessFBView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/AccessFBView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/WebContainerController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/WebContainerController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/WebContainerController$Bridge.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/WebContainerController$Bridge.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/WebContainerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/WebContainerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+    <list default="true" id="e4ae5f67-a013-4cbc-a589-49fa29fa9b6b" name="Changes" comment="initial">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/csc325_firebase_webview_auth/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JavaFXApplication" />
       </list>
     </option>
   </component>
@@ -164,7 +160,7 @@
       <workItem from="1710690942533" duration="7228000" />
       <workItem from="1710732741753" duration="608000" />
       <workItem from="1710733353801" duration="5503000" />
-      <workItem from="1772490596040" duration="2800000" />
+      <workItem from="1772490596040" duration="4160000" />
     </task>
     <task id="LOCAL-00001" summary="reduce Java version to 17">
       <option name="closed" value="true" />
@@ -190,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710737242393</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="initial">
+      <option name="closed" value="true" />
+      <created>1772495111561</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1772495111562</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +207,7 @@
     <MESSAGE value="reduce Java version to 17" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="GUI update" />
-    <option name="LAST_COMMIT_MESSAGE" value="GUI update" />
+    <MESSAGE value="initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial" />
   </component>
 </project>
