@@ -22,11 +22,18 @@ public class App extends Application {
     private final FirestoreContext contxtFirebase = new FirestoreContext();
 
     @Override
+    public void init() throws InterruptedException {
+        // simulate loading
+        Thread.sleep(1000);
+    }
+
+    @Override
     public void start(Stage primaryStage) throws Exception {
         fstore = contxtFirebase.firebase();
         fauth = FirebaseAuth.getInstance();
         scene = new Scene(loadFXML("/files/AccessFBView.fxml"));
         primaryStage.setScene(scene);
+        primaryStage.setTitle("Application");
         primaryStage.show();
     }
 
@@ -34,12 +41,13 @@ public class App extends Application {
         scene.setRoot(loadFXML(fxml));
     }
 
-    private static Parent loadFXML(String fxml) throws IOException {
+    public static Parent loadFXML(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml ));
         return fxmlLoader.load();
     }
 
     public static void main(String[] args) {
+        System.setProperty("javafx.preloader", "com.example.csc325_firebase_webview_auth.view.SplashScreen");
         launch(args);
     }
 
