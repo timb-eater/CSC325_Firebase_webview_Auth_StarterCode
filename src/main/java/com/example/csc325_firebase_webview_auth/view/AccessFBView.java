@@ -21,9 +21,8 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class AccessFBView {
 
@@ -40,12 +39,21 @@ public class AccessFBView {
     private Button readButton;
     @FXML
     private TextArea outputField;
-     private boolean key;
+    private boolean key;
     private ObservableList<Person> listOfUsers = FXCollections.observableArrayList();
     private Person person;
     public ObservableList<Person> getListOfUsers() {
         return listOfUsers;
     }
+
+    @FXML
+    private TableView<Person> table;
+    @FXML
+    private TableColumn<Person, String> nameColumn = new TableColumn<Person, String>("name");
+    @FXML
+    private TableColumn<Person, String> majorColumn = new TableColumn<Person, String>("major");
+    @FXML
+    private TableColumn<Person, String> ageColumn = new TableColumn<Person, String>("age");
 
     void initialize() {
 
@@ -53,6 +61,7 @@ public class AccessFBView {
         nameField.textProperty().bindBidirectional(accessDataViewModel.userNameProperty());
         majorField.textProperty().bindBidirectional(accessDataViewModel.userMajorProperty());
         writeButton.disableProperty().bind(accessDataViewModel.isWritePossibleProperty().not());
+
     }
 
     @FXML
@@ -112,6 +121,11 @@ public class AccessFBView {
                             Integer.parseInt(document.getData().get("Age").toString()));
                     listOfUsers.add(person);
                 }
+
+                table.setItems(getListOfUsers());
+                nameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
+                majorColumn.setCellValueFactory(new PropertyValueFactory<>("major"));
+                ageColumn.setCellValueFactory(new PropertyValueFactory<>("age"));
             }
             else
             {
